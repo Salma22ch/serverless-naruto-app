@@ -1,7 +1,7 @@
 import { Injectable } from '@angular/core';
 import { AngularFireAuth } from '@angular/fire/auth';
 import { Observable } from 'rxjs';
-import firebase from 'firebase'
+//import firebase from 'firebase'
 
 
 @Injectable({
@@ -25,9 +25,9 @@ export class AuthService {
         console.log('error:',err.message);
       });
   }
-  signInWithGoogle(){
+  /*signInWithGoogle(){
   return this.firebaseAuth.signInWithPopup(new firebase.auth.GoogleAuthProvider());
-  }
+  }*/
   
  /* FacebookAuth() {
     return this.firebaseAuth.signInWithPopup(new firebase.auth.FacebookAuthProvider());
