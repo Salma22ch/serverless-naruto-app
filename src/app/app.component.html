@@ -50,11 +50,11 @@
 </div>
 <br/>
 <div *ngIf="!(authService.user | async)">
-  <button >
+  <button (click)="signInWithGoogle()">
     Google Sign In
   </button>
 
-  <button >
+  <button (click)="FacebookAuth()" >
     Facebook  Sign In
   </button>
 </div>

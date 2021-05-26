@@ -44,6 +44,12 @@ export class AppComponent implements OnInit {
     this.email = this.password = '';
   }
 
+  signInWithGoogle(){
+    this.authService.signInWithGoogle();
+  }
+  FacebookAuth(){
+    this.authService.FacebookAuth();
+  }
   logout() {
     this.authService.logout();
   }
